@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login in</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <input type="checkbox" id="theme" hidden />
+    <div class="app">
+      <!-- <button
+      type="submit"
+        class="theme_btn"
+        onclick="document.documentElement.classList.toggle('dark')"
+      >
+        change theme
+      </button> -->
+      <!-- <div class="wrapper">
+        
+
+        <label for="theme" class="theme-toggle">
+          <div class="toggle-circle"></div>
+
+          <span class="icon sun">☀️</span>
+          <span class="icon moon">🌙</span>
+        </label>
+      </div> -->
+      <div class="hero_image">
+        <img src="../image/hero.png" alt="hero image" />
+      </div>
+      
+      <div class="login_container">
+
+        <div class="wrapper_mid">
+          <div class="login">
+            <h1>Tizimga kirish</h1>
+            <div class="input_cont">
+              <div class="email">
+                <label for="username">Email</label>
+                <input
+                  type="text"
+                  id="username"
+                  name="username"
+                  placeholder="Emailingizni kiriting"
+                />
+              </div>
+
+              <div class="password">
+                <label for="pass">
+                  <span>Parol</span
+                  ><a href="../forgot_password/index.html"
+                    >Parolni unutdingizmi?</a
+                  ></label
+                >
+                <input
+                  type="password"
+                  id="pass"
+                  name="password"
+                  minlength="8"
+                  required
+                  placeholder="Parolingizni kiriting"
+                />
+              </div>
+            </div>
+            <button
+              onclick="window.location.href = '../home_page/home.html'"
+              type="button"
+            >
+              Tizimga kirish
+            </button>
+            <div class="signin">
+              <span>Hisobingiz yo‘qmi?</span
+              ><a href="../signin/signin.html" class="text-[#2389DA]"
+                >Ro'yxatdan o'tish</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/script.js"></script>
+    <script src="../theme.js"></script>
+  </body>
+</html>

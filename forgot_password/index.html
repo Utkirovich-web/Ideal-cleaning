@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forgot Password</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <input type="checkbox" id="theme" hidden />
+    <div class="app">
+      <div class="back_href">
+        <a href="../loginin/index.html">
+          <span>
+            <!-- <img src="../svg/path.svg" alt="path icon" /> -->
+            <svg
+              width="20"
+              height="30"
+              viewBox="0 0 20 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20 3.7334L7.56753 16L20 28.2666L16.2162 32L0 16L16.2162 0L20 3.7334Z"
+                fill="currentColor"
+              />
+            </svg> </span
+          >Ortga
+        </a>
+      </div>
+
+      <div class="container">
+        <h1>Parolni tiklash</h1>
+        <h2>Sizga kod yuborishimiz uchun email’ingizni kiriting</h2>
+        <div class="email">
+          <label for="email"><span>Email</span></label>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Emailingizni kiriting"
+          />
+        </div>
+        <button type="button" class="send_btn">Kod yuborish</button>
+      </div>
+
+      <div id="invisible_part" class="invisible_part">
+        <div class="done">
+          <img src="../svg/correct.svg" alt="correct svg" />
+          <h1>Kod emailga yuborildi</h1>
+          <button onclick="window.location = '../loginin/index.html'">
+            Davom etish
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+    <script src="../theme.js"></script>
+  </body>
+</html>

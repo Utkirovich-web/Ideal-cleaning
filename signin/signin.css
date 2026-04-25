@@ -1,0 +1,163 @@
+@import "../basic/basic.css";
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.app {
+  display: block;
+}
+
+#theme:checked ~ .app a {
+  color: #2389da;
+}
+
+.back_href {
+  width: -moz-max-content;
+  width: max-content;
+}
+.back_href a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 18px;
+  font-size: 32px;
+  font-family: sans-serif;
+  color: #000;
+  font-weight: 600;
+  text-decoration: none;
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+}
+@media (max-width: 600px) {
+  .back_href a span {
+    display: none;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+.container h1 {
+  font-family: "Proxima Nova", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 4rem;
+  margin-top: 50px;
+  margin-bottom: 45px;
+}
+.container a {
+  font-family: "Proxima Nova", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  text-decoration: none;
+  color: #2389da;
+}
+.container button {
+  font-family: "Proxima Nova", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  cursor: pointer;
+  width: 100%;
+  padding-block: 25px;
+  margin-bottom: 32px;
+  border: none;
+  border-radius: 10px;
+  background-color: #2389da;
+  color: #fff;
+}
+.container button a {
+  color: white;
+}
+.container .loginin {
+  margin-bottom: 68px;
+}
+.container .loginin span {
+  font-size: 2rem;
+}
+.container .loginin a {
+  margin-left: 5px;
+}
+.container .input_cont {
+  width: 50vw;
+}
+.container .input_cont label {
+  font-family: "Proxima Nova", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+.container .input_cont input {
+  border: none;
+  border-radius: 5px;
+  background-color: #e5e5e5;
+  padding-block: 24px;
+  padding-left: 36px;
+  margin-top: 5px;
+  margin-bottom: 29px;
+  width: 100%;
+}
+.container .input_cont input :focus {
+  border: #2389da;
+}
+@media (max-width: 600px) {
+  .container h1 {
+    font-size: 3rem;
+  }
+  .container a {
+    font-size: 1.5rem;
+  }
+  .container span {
+    font-size: 1.5rem;
+  }
+  .container input {
+    padding: 0;
+  }
+  .container button {
+    font-size: 1.5rem;
+    cursor: pointer;
+    width: 100%;
+    padding-block: 25px;
+    margin-bottom: 32px;
+    border: none;
+    border-radius: 10px;
+    background-color: #2389da;
+    color: #fff;
+  }
+  .container button a {
+    color: white;
+  }
+  .container .loginin {
+    margin-bottom: 2rem;
+  }
+  .container .loginin span {
+    font-size: 1.5rem;
+  }
+  .container .loginin a {
+    margin-left: 5px;
+  }
+  .container .input_cont {
+    padding: 2rem;
+    width: 80%;
+  }
+  .container .input_cont label {
+    font-family: "Proxima Nova", Arial, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  .container .input_cont input {
+    border: none;
+    border-radius: 5px;
+    background-color: #e5e5e5;
+    padding-block: 24px;
+    padding-left: 36px;
+    margin-top: 5px;
+    margin-bottom: 29px;
+    width: 100%;
+  }
+  .container .input_cont input :focus {
+    border: #2389da;
+  }
+}/*# sourceMappingURL=signin.css.map */

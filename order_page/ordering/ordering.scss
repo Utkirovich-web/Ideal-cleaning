@@ -1,0 +1,244 @@
+@import "../../basic/basic.css";
+
+@mixin flex($flex-direction, $align-items, $gap) {
+  display: flex;
+  flex-direction: $flex-direction;
+  align-items: $align-items;
+  gap: $gap;
+}
+
+@mixin button($-width) {
+  @include Proxima(700, 24px);
+  cursor: pointer;
+  width: $-width;
+  padding-block: 2.5rem;
+  margin-bottom: 3.2rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: #2389da;
+  color: #fff;
+}
+
+@mixin input {
+  border: none;
+  border-radius: 5px;
+  background-color: #e5e5e5;
+  padding-block: 24px;
+  padding-left: 36px;
+  margin-top: 5px;
+  margin-bottom: 29px;
+  width: 100%;
+}
+
+@mixin href($font-size, $font-family, $-color, $font-weight) {
+  font-size: $font-size;
+  font-family: $font-family;
+  color: $-color;
+  font-weight: $font-weight;
+  text-decoration: none;
+}
+
+@mixin Proxima($font-weight, $font-size) {
+  font-family: "Proxima Nova", Arial, sans-serif;
+  font-weight: $font-weight;
+  font-size: $font-size;
+}
+
+.back_href {
+  a {
+    @include flex(row, center, 18px);
+    @include href(32px, sans-serif, #000, 600);
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+  }
+
+  @media (max-width: 730px) {
+    a {
+      span {
+        display: none;
+      }
+    }
+  }
+}
+
+#theme:checked ~ .app {
+  a {
+    color: #fff;
+    text-shadow: #ffcc00 1px 0 10px;
+  }
+  .container {
+    background-color: #000;
+  }
+
+  span,
+  h1 {
+    text-shadow: #ffcc00 1px 0 10px;
+  }
+
+  input {
+    box-shadow: 0px 0px 10px 10px rgba(163, 163, 195, 0.2);
+  }
+
+  button {
+    box-shadow: 0px 0px 10px 10px rgba(163, 163, 195, 0.2);
+  }
+
+  select {
+    box-shadow: 0px 0px 10px 10px rgba(163, 163, 195, 0.2);
+  }
+}
+
+.hidden_sec {
+  @include flex(row, center, 0px);
+  background-color: #00000086;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 120vh;
+  position: fixed;
+  display: none;
+
+  .wrapper {
+    padding: 6rem 2rem;
+    @include flex(column, center, 3em);
+    justify-content: center;
+    top: 20rem;
+    left: 35%;
+    position: absolute;
+    background-color: #fff;
+    box-shadow:
+      rgba(17, 17, 26, 0.1) 0px 8px 24px,
+      rgba(17, 17, 26, 0.1) 0px 16px 56px,
+      rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    border-radius: 1em;
+    width: 35%;
+    height: max-content;
+
+    span {
+      @include Proxima(600, 2.5em);
+      color: #d91d1d;
+    }
+
+    button {
+      @include button(inherit);
+      font-size: 2em;
+      width: max-content;
+      height: max-content;
+      background: none;
+      padding: 0;
+      margin: 0;
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+
+      .btn_yes {
+        padding-block: 0.6em;
+      }
+
+      .btn_no {
+        background-color: inherit;
+        color: #2389da;
+        border: 2px solid #2389da;
+      }
+    }
+  }
+
+  @media (max-width: 950px) {
+    .wrapper {
+      button img{
+        width: 20px;
+      }
+      
+      img {
+        width: 50px;
+      }
+
+      span {
+        text-align: center;
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+main {
+  background-color: #fff;
+  margin: 0;
+}
+
+.container {
+  @include flex(column, center, 0);
+  background-color: #fff;
+
+  .ordering_wrapper {
+    padding: 2rem;
+  }
+
+  h1 {
+    @include Proxima(700, 4rem);
+    margin-top: 50px;
+    margin-bottom: 45px;
+  }
+
+  a {
+    @include Proxima(600, 1rem);
+    text-decoration: none;
+    color: #2389da;
+  }
+
+  button {
+    @include Proxima(700, 2rem);
+    cursor: pointer;
+    width: 100%;
+    padding-block: 25px;
+    border: none;
+    border-radius: 10px;
+    background-color: #2389da;
+    color: #fff;
+    padding-inline: 0;
+    margin: 0;
+
+    a {
+      color: white;
+    }
+  }
+
+  .input_cont {
+    width: 35%;
+    margin-bottom: 2rem;
+
+    .services_status {
+      @include flex(column, flex-start, 2rem);
+
+      select {
+        @include input();
+        padding: 2rem;
+      }
+    }
+
+    label {
+      @include Proxima(600, 20px);
+    }
+
+    input {
+      @include input();
+
+      padding: 2rem;
+    }
+  }
+
+  @media (max-width: 730px) {
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    .input_cont {
+      width: 70%;
+      button {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}

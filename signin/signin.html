@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="signin.css" />
+  </head>
+  <body>
+    <input type="checkbox" id="theme" hidden />
+    <div class="app">
+      <!-- <button
+      type="submit"
+        class="theme_btn"
+        onclick="document.documentElement.classList.toggle('dark')"
+      >
+        change theme
+      </button> -->
+      <!-- <div class="wrapper">`
+        <label for="theme" class="theme-toggle">
+          <div class="toggle-circle"></div>
+
+          <span class="icon sun">☀️</span>
+          <span class="icon moon">🌙</span>
+        </label>
+      </div> -->
+      <div class="back_href">
+        <a href="../loginin/index.html">
+          <!-- <img src="../svg/path.svg" alt="path icon" /> -->
+          <svg
+            width="20"
+            height="30"
+            viewBox="0 0 20 32"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M20 3.7334L7.56753 16L20 28.2666L16.2162 32L0 16L16.2162 0L20 3.7334Z"
+              fill="currentColor"
+            />
+          </svg>
+          <span>Ortga</span>
+        </a>
+      </div>
+
+      <div class="container">
+        <h1>Ro'yxatdan o'tish</h1>
+        <div class="input_cont">
+          <div class="name_cont">
+            <label for="name"><span>Ismingiz</span></label>
+
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              placeholder="Ismingizni kiriting"
+            />
+          </div>
+          <div class="phone_number">
+            <label for="phone">
+              <span>Telefon raqamingiz</span>
+            </label>
+
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              inputmode="numeric"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              required
+              placeholder="Telefon raqamingiz kiriting"
+            />
+          </div>
+
+          <div class="email">
+            <label for="email"><span>Email</span></label>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Emailingizni kiriting"
+            />
+          </div>
+
+          <div class="password">
+            <label for="pass">
+              <!-- style="display: flex; justify-content: space-between" -->
+              <span>Parol</span></label
+            >
+            <input
+              type="password"
+              id="pass"
+              name="password"
+              minlength="8"
+              required
+              placeholder="Parolingizni kiriting"
+            />
+          </div>
+
+          <div class="password">
+            <label for="pass_again">
+              <!-- style="display: flex; justify-content: space-between" -->
+              <span>Parolni tasdiqlash</span>
+            </label>
+            <input
+              type="password"
+              id="pass_again"
+              name="password"
+              minlength="8"
+              required
+              placeholder="Parolingizni tasdiqlang"
+            />
+          </div>
+          <button onclick="window.location = '../home_page/home.html'">
+            Ro'yxatdan o'tish
+          </button>
+        </div>
+        <div class="loginin">
+          <span>Ro‘yxatdan o‘tganmisiz?</span
+          ><a href="../loginin/index.html">Tizimga kirish</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="../theme.js"></script>
+  </body>
+</html>

@@ -1,0 +1,118 @@
+@import "../basic/basic.css";
+#theme:checked ~ .app .main_cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-block: 0;
+  padding-block: 4rem;
+  width: 65vw;
+}
+#theme:checked ~ .app .main_cont button {
+  font-family: "Proxima Nova", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  cursor: pointer;
+  width: 100%;
+  padding-block: 2.5rem;
+  margin-bottom: 3.2rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: #2389da;
+  color: #fff;
+  width: 100%;
+}
+
+.header_wrapper {
+  z-index: 9999;
+}
+
+header .settings a {
+  background-color: #2389da;
+  color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+header .settings a img:first-child {
+  display: none;
+}
+header .settings a img:nth-child(2) {
+  display: block;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  background-color: #e2e2e2;
+  height: -moz-max-content;
+  height: max-content;
+}
+.container .main_cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background-color: #fff;
+  padding: 2rem;
+}
+.container .main_cont button {
+  font-family: "Proxima Nova", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  cursor: pointer;
+  width: 100%;
+  padding-block: 2.5rem;
+  margin-bottom: 3.2rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: #2389da;
+  color: #fff;
+  width: 100%;
+}
+.container h1 {
+  font-family: "Proxima Nova", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 45px;
+}
+.container a {
+  font-family: "Proxima Nova", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  text-decoration: none;
+}
+.container .loginin {
+  margin-bottom: 6.8rem;
+  background-color: #fff;
+}
+.container .loginin a {
+  margin-left: 0.5rem;
+}
+.container .input_cont label {
+  font-family: "Proxima Nova", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.container .input_cont input {
+  border: none;
+  border-radius: 5px;
+  background-color: #e5e5e5;
+  padding-block: 24px;
+  padding-left: 36px;
+  margin-top: 5px;
+  margin-bottom: 29px;
+  width: 100%;
+  width: 100%;
+  outline: none;
+}
+@media (max-width: 705px) {
+  .container .wrapper_mid h1 {
+    font-size: x-large;
+  }
+  .container .wrapper_mid button {
+    padding: 2rem;
+    font-size: 1.5rem;
+  }
+}/*# sourceMappingURL=settings.css.map */

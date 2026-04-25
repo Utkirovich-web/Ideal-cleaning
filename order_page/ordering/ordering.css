@@ -1,0 +1,218 @@
+@import "../../basic/basic.css";
+.back_href a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 18px;
+  font-size: 32px;
+  font-family: sans-serif;
+  color: #000;
+  font-weight: 600;
+  text-decoration: none;
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+}
+@media (max-width: 730px) {
+  .back_href a span {
+    display: none;
+  }
+}
+
+#theme:checked ~ .app a {
+  color: #fff;
+  text-shadow: #ffcc00 1px 0 10px;
+}
+#theme:checked ~ .app .container {
+  background-color: #000;
+}
+#theme:checked ~ .app span,
+#theme:checked ~ .app h1 {
+  text-shadow: #ffcc00 1px 0 10px;
+}
+#theme:checked ~ .app input {
+  box-shadow: 0px 0px 10px 10px rgba(163, 163, 195, 0.2);
+}
+#theme:checked ~ .app button {
+  box-shadow: 0px 0px 10px 10px rgba(163, 163, 195, 0.2);
+}
+#theme:checked ~ .app select {
+  box-shadow: 0px 0px 10px 10px rgba(163, 163, 195, 0.2);
+}
+
+.hidden_sec {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0px;
+  background-color: rgba(0, 0, 0, 0.5254901961);
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 120vh;
+  position: fixed;
+  display: none;
+}
+.hidden_sec .wrapper {
+  padding: 6rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3em;
+  justify-content: center;
+  top: 20rem;
+  left: 35%;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+  border-radius: 1em;
+  width: 35%;
+  height: -moz-max-content;
+  height: max-content;
+}
+.hidden_sec .wrapper span {
+  font-family: "Proxima Nova", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 2.5em;
+  color: #d91d1d;
+}
+.hidden_sec .wrapper button {
+  font-family: "Proxima Nova", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  cursor: pointer;
+  width: inherit;
+  padding-block: 2.5rem;
+  margin-bottom: 3.2rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: #2389da;
+  color: #fff;
+  font-size: 2em;
+  width: -moz-max-content;
+  width: max-content;
+  height: -moz-max-content;
+  height: max-content;
+  background: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+.hidden_sec .wrapper button .btn_yes {
+  padding-block: 0.6em;
+}
+.hidden_sec .wrapper button .btn_no {
+  background-color: inherit;
+  color: #2389da;
+  border: 2px solid #2389da;
+}
+@media (max-width: 950px) {
+  .hidden_sec .wrapper button img {
+    width: 20px;
+  }
+  .hidden_sec .wrapper img {
+    width: 50px;
+  }
+  .hidden_sec .wrapper span {
+    text-align: center;
+    font-size: 2rem;
+  }
+}
+
+main {
+  background-color: #fff;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  background-color: #fff;
+}
+.container .ordering_wrapper {
+  padding: 2rem;
+}
+.container h1 {
+  font-family: "Proxima Nova", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 4rem;
+  margin-top: 50px;
+  margin-bottom: 45px;
+}
+.container a {
+  font-family: "Proxima Nova", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #2389da;
+}
+.container button {
+  font-family: "Proxima Nova", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  cursor: pointer;
+  width: 100%;
+  padding-block: 25px;
+  border: none;
+  border-radius: 10px;
+  background-color: #2389da;
+  color: #fff;
+  padding-inline: 0;
+  margin: 0;
+}
+.container button a {
+  color: white;
+}
+.container .input_cont {
+  width: 35%;
+  margin-bottom: 2rem;
+}
+.container .input_cont .services_status {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+}
+.container .input_cont .services_status select {
+  border: none;
+  border-radius: 5px;
+  background-color: #e5e5e5;
+  padding-block: 24px;
+  padding-left: 36px;
+  margin-top: 5px;
+  margin-bottom: 29px;
+  width: 100%;
+  padding: 2rem;
+}
+.container .input_cont label {
+  font-family: "Proxima Nova", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+.container .input_cont input {
+  border: none;
+  border-radius: 5px;
+  background-color: #e5e5e5;
+  padding-block: 24px;
+  padding-left: 36px;
+  margin-top: 5px;
+  margin-bottom: 29px;
+  width: 100%;
+  padding: 2rem;
+}
+@media (max-width: 730px) {
+  .container h1 {
+    font-size: 2.5rem;
+  }
+  .container .input_cont {
+    width: 70%;
+  }
+  .container .input_cont button {
+    font-size: 1.4rem;
+  }
+}/*# sourceMappingURL=ordering.css.map */

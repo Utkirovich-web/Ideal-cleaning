@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./ordering.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="checkbox" id="theme" hidden />
+    <div class="app">
+      <main>
+        <div class="back_href">
+          <a
+            href="#"
+            onclick="
+              history.back();
+              return false;
+            "
+          >
+            <!-- <img src="../../svg/path.svg" alt="path icon" /> -->
+            <svg
+              width="20"
+              height="32"
+              viewBox="0 0 20 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20 3.7334L7.56753 16L20 28.2666L16.2162 32L0 16L16.2162 0L20 3.7334Z"
+                fill="currentColor"
+              />
+            </svg>
+            <span>Ortga</span>
+          </a>
+        </div>
+
+        <form class="container" id="form" action="../order.html" novalidate>
+          <h1>Buyurtma ma‘lumotlari</h1>
+          <div class="input_cont">
+            <div class="name_cont">
+              <label for="name"><span>Mijoz ismi sharifi</span></label>
+
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                placeholder="Ism Sharifingizni kiriting"
+              />
+            </div>
+            <div class="typeof_service">
+              <label for="service">
+                <span>Xizmat turi</span>
+              </label>
+
+              <input
+                type="text"
+                id="service"
+                name="service"
+                required
+                placeholder="Xizmat turini yozing"
+              />
+            </div>
+
+            <div class="date">
+              <label for="date"><span>Buyurtirilgan sana</span></label>
+              <input type="date" id="date" name="date" />
+            </div>
+
+            <div class="when_date">
+              <label for="pass"> <span>Qachon tayyor bo‘ladi?</span></label>
+              <input
+                type="date"
+                id="whe_date"
+                name="when_date"
+                minlength="8"
+                required
+                placeholder="Parolingizni kiriting"
+              />
+            </div>
+
+            <div class="services_status">
+              <label for="services_status"><span>Ximat xolati</span></label>
+              <select
+                name="services_status"
+                id="services_select"
+                aria-label="services_status"
+              >
+                <option value=""></option>
+                <option value="">Tozalanmoqda</option>
+                <option value="">Tayyor</option>
+                <option value="">Olib ketildi</option>
+              </select>
+            </div>
+
+            <div class="price">
+              <label for="price"><span>Xizmat narxi (so'm)</span></label>
+              <input type="number" id="price" name="price" />
+            </div>
+
+            <button type="submit">Buyurtmani qo‘shish</button>
+          </div>
+        </form>
+
+        <div class="hidden_sec" id="error">
+          <div class="wrapper">
+            <button class="btn_close" onclick="window.location = './ordering.html'">
+              <img src="../../svg/x.svg" alt="x icon" aria-label="x" />
+            </button>
+            <img src="../../svg/exclamation.svg" alt="exclamation icon" />
+            <span>Bo‘sh joylarni to‘ldiring! </span>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="./ordering.js"></script>
+    <script src="../../theme.js"></script>
+  </body>
+</html>

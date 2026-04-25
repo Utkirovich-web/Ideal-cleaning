@@ -1,0 +1,54 @@
+@import "../basic/basic.css";
+header .order a {
+  background-color: #2389da;
+  color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+header .order a img:first-child {
+  display: none;
+}
+header .order a img:nth-child(2) {
+  display: block;
+}
+
+main .mid_section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  justify-content: space-between;
+  padding-block: 3rem;
+}
+main .mid_section span {
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+main .mid_section label {
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #2389da;
+}
+main .mid_section .mid_left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+@media (max-width: 512px) {
+  main .mid_section .mid_left {
+    gap: 2rem;
+  }
+}
+main .mid_section .mid_left select {
+  border: none;
+  background-color: transparent;
+}
+main .mid_section .mid_right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}/*# sourceMappingURL=order.css.map */

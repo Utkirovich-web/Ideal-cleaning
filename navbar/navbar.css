@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  margin-top: 21px;
+  width: 300px;
+  grid-area: header;
+}
+header .logo {
+  margin-left: 68px;
+}
+header nav {
+  margin-top: 54px;
+  margin-inline: 18px;
+}
+header nav .customer a {
+  margin-left: 6px;
+}
+header nav div :hover {
+  color: #fff;
+  background-color: #2389da;
+  transition-duration: 0.4s;
+}
+header nav div a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 28px;
+  font-size: 0;
+  font-family: sans-serif;
+  color: #000;
+  font-weight: 600;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  padding-block: 19px;
+  padding-left: 25px;
+  border-radius: 16px;
+}/*# sourceMappingURL=navbar.css.map */

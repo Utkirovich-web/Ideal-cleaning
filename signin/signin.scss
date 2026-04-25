@@ -1,0 +1,188 @@
+@import "../basic/basic.css";
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@mixin flex($display, $flex-direction, $align-items, $gap) {
+  display: $display;
+  flex-direction: $flex-direction;
+  align-items: $align-items;
+  gap: $gap;
+}
+
+@mixin input {
+  border: none;
+  border-radius: 5px;
+  background-color: #e5e5e5;
+  padding-block: 24px;
+  padding-left: 36px;
+  margin-top: 5px;
+  margin-bottom: 29px;
+  width: 100%;
+}
+
+@mixin href($font-size, $font-family, $-color, $font-weight) {
+  font-size: $font-size;
+  font-family: $font-family;
+  color: $-color;
+  font-weight: $font-weight;
+  text-decoration: none;
+}
+
+@mixin Proxima($font-weight, $font-size) {
+  font-family: "Proxima Nova", Arial, sans-serif;
+  font-weight: $font-weight;
+  font-size: $font-size;
+}
+
+.app {
+  display: block;
+}
+
+#theme:checked ~ .app {
+  a {
+    color: #2389da;
+  }
+}
+
+.back_href {
+  width: max-content;
+  a {
+    @include flex(flex, row, center, 18px);
+    @include href(32px, sans-serif, #000, 600);
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+  }
+
+  @media (max-width: 600px) {
+    a {
+      span {
+        display: none;
+      }
+    }
+  }
+}
+
+.container {
+  @include flex(flex, column, center, 0);
+
+  h1 {
+    @include Proxima(700, 4rem);
+    margin-top: 50px;
+    margin-bottom: 45px;
+  }
+
+  a {
+    @include Proxima(600, 2rem);
+    text-decoration: none;
+    color: #2389da;
+  }
+
+  button {
+    @include Proxima(700, 24px);
+    cursor: pointer;
+    width: 100%;
+    padding-block: 25px;
+    margin-bottom: 32px;
+    border: none;
+    border-radius: 10px;
+    background-color: #2389da;
+    color: #fff;
+
+    a {
+      color: white;
+    }
+  }
+
+  .loginin {
+    margin-bottom: 68px;
+
+    span {
+      font-size: 2rem;
+    }
+
+    a {
+      margin-left: 5px;
+    }
+  }
+
+  .input_cont {
+    width: 50vw;
+    label {
+      @include Proxima(600, 20px);
+    }
+
+    input {
+      @include input();
+
+      :focus {
+        border: #2389da;
+      }
+    }
+  }
+
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 3rem;
+    }
+
+    a {
+      font-size: 1.5rem;
+    }
+
+    span {
+      font-size: 1.5rem;
+    }
+
+    input {
+      padding: 0;
+    }
+
+    button {
+      font-size: 1.5rem;
+      cursor: pointer;
+      width: 100%;
+      padding-block: 25px;
+      margin-bottom: 32px;
+      border: none;
+      border-radius: 10px;
+      background-color: #2389da;
+      color: #fff;
+
+      a {
+        color: white;
+      }
+    }
+
+    .loginin {
+      margin-bottom: 2rem;
+
+      span {
+        font-size: 1.5rem;
+      }
+
+      a {
+        margin-left: 5px;
+      }
+    }
+
+    .input_cont {
+      padding: 2rem;
+      width: 80%;
+      label {
+        @include Proxima(600, 20px);
+      }
+
+      input {
+        @include input();
+
+        :focus {
+          border: #2389da;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,220 @@
+@import "../../basic/basic.css";
+#theme:checked ~ .app .hidden_sec {
+  background-color: rgba(0, 0, 0, 0.7058823529);
+}
+#theme:checked ~ .app .hidden_sec .wrapper {
+  background-color: #fff;
+}
+#theme:checked ~ .app .hidden_sec .wrapper .buttons {
+  background-color: inherit;
+}
+#theme:checked ~ .app .hidden_sec .wrapper .buttons button {
+  margin: 0;
+  padding: 2rem 3rem;
+}
+
+.header_wrapper {
+  z-index: 2000;
+}
+
+header .marketing a {
+  background-color: #2389da;
+  color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+header .marketing a img:first-child {
+  display: none;
+}
+header .marketing a img:nth-child(2) {
+  display: block;
+}
+
+main {
+  background-color: #e2e2e2;
+}
+main .mid_section {
+  margin-bottom: 2rem;
+}
+main .mid_section span {
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 4rem;
+}
+main .mid_section label {
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #2389da;
+}
+main .mid_section .mid_left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+main .mid_section .mid_left textarea {
+  resize: none;
+  outline: none;
+  border: none;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+  border-radius: 1em;
+  width: 100%;
+  font-size: 16px;
+  padding: 2em;
+  transition-duration: 0.3s;
+}
+main .mid_section .mid_left textarea:focus {
+  font-size: 17px;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+main .mid_section .mid_right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5em;
+}
+main .mid_section .mid_right .users {
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+  padding: 2.5em;
+  background-color: #fff;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+  border-radius: 1em;
+}
+main .btn_wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2em;
+  justify-content: flex-end;
+}
+main .btn_wrapper button {
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  cursor: pointer;
+  width: 321px;
+  padding-block: 2.5rem;
+  margin-bottom: 3.2rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: #2389da;
+  color: #fff;
+}
+main .btn_wrapper .template_btn {
+  color: #2389da;
+  border: 0.1em solid #2389da;
+  background-color: inherit;
+}
+main .hidden_sec {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0px;
+  background-color: rgba(0, 0, 0, 0.5254901961);
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 3000;
+  display: none;
+}
+main .hidden_sec .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3em;
+  justify-content: center;
+  position: absolute;
+  top: 20rem;
+  left: 35%;
+  background-color: #fff;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+  border-radius: 1em;
+  width: 35vw;
+  height: 45vh;
+}
+main .hidden_sec .wrapper span {
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 2em;
+  color: #2389da;
+}
+main .hidden_sec .wrapper .buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3em;
+}
+main .hidden_sec .wrapper .buttons button {
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  cursor: pointer;
+  width: inherit;
+  padding-block: 2.5rem;
+  margin-bottom: 3.2rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: #2389da;
+  color: #fff;
+  margin: 0;
+  padding: 2rem 3rem;
+  font-size: 2em;
+}
+@media (max-width: 705px) {
+  main .mid_section span {
+    font-size: x-large;
+  }
+  main .btn_wrapper button {
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    cursor: pointer;
+    width: 221px;
+    padding-block: 2.5rem;
+    margin-bottom: 3.2rem;
+    border: none;
+    border-radius: 1rem;
+    background-color: #2389da;
+    color: #fff;
+    font-size: 1.5rem;
+  }
+  main .btn_wrapper .template_btn {
+    color: #2389da;
+    border: 0.1em solid #2389da;
+    background-color: inherit;
+  }
+  main .hidden_sec .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    justify-content: center;
+    top: 20rem;
+    left: 30%;
+    width: 45vw;
+    height: 35vh;
+  }
+  main .hidden_sec .wrapper img {
+    width: 5rem;
+  }
+  main .hidden_sec .wrapper span {
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 1.5em;
+    color: #2389da;
+  }
+  main .hidden_sec .wrapper .buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3em;
+  }
+  main .hidden_sec .wrapper .buttons button {
+    font-size: 1rem;
+  }
+}/*# sourceMappingURL=index.css.map */
